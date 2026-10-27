@@ -3044,7 +3044,7 @@ input, select, textarea {
 	  position: fixed;
 	  top: 0; left: 0; right: 0;
 	  z-index: 1000;
-	  background: #fff;
+	  background: #3a3a3a;
 	  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 	}
 	
@@ -3091,7 +3091,7 @@ input, select, textarea {
 	  flex-direction: column;
 	  gap: 0;
 	  min-width: 200px;
-	  background: #222;
+	  background: #fff;
 	  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 	  list-style: none;
 	  margin: 0;
