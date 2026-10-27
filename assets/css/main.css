@@ -203,6 +203,11 @@ input, select, textarea {
 			text-decoration: none;
 		}
 
+	h1, h2, h3, h4, h5, h6,
+	.site-name {
+	  font-family: Candara, "Trebuchet MS", Calibri, sans-serif;
+	}
+
 	h1 {
 		font-size: 3.5rem;
 		line-height: 1.2;
@@ -3045,7 +3050,7 @@ input, select, textarea {
 	  top: 0; left: 0; right: 0;
 	  z-index: 1000;
 	  background: #4a4a4a;
-	  opacity: 0.4 !important;
+	  opacity: 0.6 !important;
 	  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 	}
 	
