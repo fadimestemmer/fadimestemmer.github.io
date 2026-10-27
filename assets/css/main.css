@@ -1,5 +1,4 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
 /*
 	Story by HTML5 UP
@@ -157,8 +156,8 @@ input, select, textarea {
 		color: #000000;
 	}
 
-	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+	body, input, select, textarea, button {
+		font-family: Arial, Helvetica, sans-serif;
 		font-size: 1rem;
 		font-weight: 300;
 		line-height: 1.65;
@@ -3057,8 +3056,9 @@ input, select, textarea {
 	}
 	
 	.site-name {
-	  font-size: 5.0rem;
-	  font-weight: 800;
+	  font-family: Candara, "Trebuchet MS", Calibri, sans-serif;
+	  font-size: 1.5rem;
+	  font-weight: 600;
 	  text-decoration: none;
 	  color: #fff;
 	  border-bottom: none;
@@ -3074,7 +3074,7 @@ input, select, textarea {
 	
 	.nav-container a {
 	  text-decoration: none;
-	  color: #222;
+	  color: #fff;
 	  border-bottom: none;
 	}
 	
@@ -3083,11 +3083,13 @@ input, select, textarea {
 	/* Dropdowns */
 	.dropdown { position: relative; }
 	
-	.dropdown-menu {
+	.nav-container .dropdown > ul.dropdown-menu {
 	  display: none;
 	  position: absolute;
 	  top: 100%;
 	  left: 0;
+	  flex-direction: column;
+	  gap: 0;
 	  min-width: 200px;
 	  background: #fff;
 	  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
@@ -3096,7 +3098,10 @@ input, select, textarea {
 	  padding: 0.5rem 0;
 	}
 	
-	.dropdown:hover .dropdown-menu { display: block; }
+	.nav-container .dropdown:hover > ul.dropdown-menu,
+	.nav-container .dropdown:focus-within > ul.dropdown-menu {
+	  display: flex;
+	}
 	
 	.dropdown-menu li { padding: 0; }
 	.dropdown-menu a {
