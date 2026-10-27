@@ -3057,10 +3057,10 @@ input, select, textarea {
 	}
 	
 	.site-name {
-	  font-size: 1.3rem;
-	  font-weight: 600;
+	  font-size: 5.0rem;
+	  font-weight: 800;
 	  text-decoration: none;
-	  color: #222;
+	  color: #fff;
 	  border-bottom: none;
 	}
 	
@@ -3078,7 +3078,7 @@ input, select, textarea {
 	  border-bottom: none;
 	}
 	
-	.nav-container a:hover { opacity: 0.6; }
+	.nav-container a:hover { opacity: 0.4; }
 	
 	/* Dropdowns */
 	.dropdown { position: relative; }
