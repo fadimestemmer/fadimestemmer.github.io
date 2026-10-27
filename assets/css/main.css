@@ -3042,38 +3042,74 @@ input, select, textarea {
 
 	/* Top Navigation Bar */
 	.topbar {
-	  position: fixed;       /* stay at top when scrolling */
-	  top: 0;
-	  left: 0;
-	  width: 100%;
-	  background-color: rgba(0, 0, 0, 0.7); /* translucent black */
-	  padding: 10px 40px;
-	  z-index: 1000;         /* ensure it’s above other content */
-	  backdrop-filter: blur(5px); /* optional: soft blur behind */
+	  position: fixed;
+	  top: 0; left: 0; right: 0;
+	  z-index: 1000;
+	  background: #fff;
+	  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 	}
 	
-	.topbar .nav-container ul {
-	  list-style: none;
+	.nav-container {
 	  display: flex;
-	  gap: 30px;             /* space between tabs */
+	  justify-content: space-between;  /* name left, links right */
+	  align-items: center;
+	  padding: 0.75rem 2rem;
+	}
+	
+	.site-name {
+	  font-size: 1.3rem;
+	  font-weight: 600;
+	  text-decoration: none;
+	  color: #222;
+	  border-bottom: none;
+	}
+	
+	.nav-container > ul {
+	  display: flex;
+	  gap: 1.75rem;
+	  list-style: none;
 	  margin: 0;
 	  padding: 0;
 	}
 	
-	.topbar .nav-container ul li a {
-	  color: white;
+	.nav-container a {
 	  text-decoration: none;
-	  font-weight: 500;
-	  padding: 6px 12px;
-	  transition: background 0.3s, color 0.3s;
-	  border-radius: 4px;
+	  color: #222;
+	  border-bottom: none;
 	}
 	
-	.topbar .nav-container ul li a:hover {
-	  background-color: rgba(255, 255, 255, 0.2); /* subtle hover */
+	.nav-container a:hover { opacity: 0.6; }
+	
+	/* Dropdowns */
+	.dropdown { position: relative; }
+	
+	.dropdown-menu {
+	  display: none;
+	  position: absolute;
+	  top: 100%;
+	  left: 0;
+	  min-width: 200px;
+	  background: #fff;
+	  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+	  list-style: none;
+	  margin: 0;
+	  padding: 0.5rem 0;
 	}
-
-
+	
+	.dropdown:hover .dropdown-menu { display: block; }
+	
+	.dropdown-menu li { padding: 0; }
+	.dropdown-menu a {
+	  display: block;
+	  padding: 0.5rem 1rem;
+	  white-space: nowrap;
+	}
+	
+	/* Mobile: stack name above links */
+	@media (max-width: 800px) {
+	  .nav-container { flex-direction: column; gap: 0.5rem; }
+	  .nav-container > ul { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+	}
 /* Banner (transitions) */
 
 	.banner.onload-content-fade-up .content {
