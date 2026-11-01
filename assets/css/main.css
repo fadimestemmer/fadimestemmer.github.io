@@ -8810,6 +8810,19 @@ input, select, textarea {
 		}
 
 /* Gallery: every tile the same size, images fill it completely */
+.gallery.style1 article {
+  aspect-ratio: 4 / 3;
+}
+
+.gallery.style1 article .image {
+  height: 100%;
+}
+
+.gallery.style1 article .image img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .gallery.style2 article {
   aspect-ratio: 4 / 3;          /* same shape for every tile */
 }
@@ -8826,3 +8839,5 @@ input, select, textarea {
   object-fit: cover;            /* crops to fill instead of leaving gaps or stretching */
   object-position: center;
 }
+
+
