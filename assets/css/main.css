@@ -8809,11 +8809,20 @@ input, select, textarea {
 		  object-position: center;
 		}
 
+/* Gallery: every tile the same size, images fill it completely */
+.gallery.style2 article {
+  aspect-ratio: 4 / 3;          /* same shape for every tile */
+}
 
+.gallery.style2 article .image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
-
-
-
-
-
-
+.gallery.style2 article .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;            /* crops to fill instead of leaving gaps or stretching */
+  object-position: center;
+}
