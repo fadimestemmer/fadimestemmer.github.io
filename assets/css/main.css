@@ -8840,4 +8840,8 @@ input, select, textarea {
   object-position: center;
 }
 
-
+/* Keep the face in frame */
+.banner.style1.face-centered .image img {
+  object-fit: cover;
+  object-position: 50% 25%;   /* horizontal vertical */
+}
