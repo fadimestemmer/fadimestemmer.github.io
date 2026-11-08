@@ -8925,3 +8925,25 @@ input, select, textarea {
 @media (max-width: 600px) {
   .project-grid { grid-template-columns: 1fr; }
 }
+
+/* Centered figure below text */
+.center-figure {
+  margin: 2.5rem auto 0 auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+.center-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.center-figure figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: rgba(0,0,0,0.6);
+}
